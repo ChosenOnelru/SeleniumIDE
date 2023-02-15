@@ -1,0 +1,477 @@
+{
+  "id": "4bbccff3-1cf6-416b-be2b-f439799fc159",
+  "version": "2.0",
+  "name": "PortfolioTesting",
+  "url": "https://github.com/ChosenOnelru",
+  "tests": [{
+    "id": "af4781d4-1a81-46d3-a8e9-516bc5ea9233",
+    "name": "Главная страница портфолио",
+    "commands": [{
+      "id": "309f98a4-e7ef-46ce-a0a9-79a1a8f46346",
+      "comment": "",
+      "command": "open",
+      "target": "https://github.com/ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "375923ef-37df-4281-baf6-b1c9dbc08072",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f0650c2-e241-4c1a-8c27-422032cc906d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.markdown-body > h2:nth-child(2)",
+      "targets": [
+        ["css=.markdown-body > h2:nth-child(2)", "css:finder"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"]
+      ],
+      "value": "I'm a Junior QA Engineer"
+    }, {
+      "id": "0c77beb1-ee6e-4179-baa5-a0eab4bb4451",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h2:nth-child(3)",
+      "targets": [
+        ["css=h2:nth-child(3)", "css:finder"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/h2[2]", "xpath:idRelative"],
+        ["xpath=//h2[2]", "xpath:position"],
+        ["xpath=//h2[contains(.,'My CV')]", "xpath:innerText"]
+      ],
+      "value": "My CV"
+    }, {
+      "id": "43dc747c-0f77-4621-a31a-afebc091b781",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=[href*=\"docs\"]",
+      "targets": [],
+      "value": "Link to my CV"
+    }, {
+      "id": "e1016acb-9b00-4207-9640-0e396b508aaa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3:nth-child(5)",
+      "targets": [
+        ["css=h3:nth-child(5)", "css:finder"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/h3", "xpath:idRelative"],
+        ["xpath=//article/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Tools')]", "xpath:innerText"]
+      ],
+      "value": "Tools"
+    }, {
+      "id": "c1377195-aedf-474c-b28b-578fa681e368",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"jira\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f04674a5-00b5-4e1c-bcc2-3be91d66ec34",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"Postman\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "147198c8-b94c-410d-a7cb-f0b56ab48260",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"Swagger\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb79811a-9cb7-4380-a5ae-61b188296e10",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"Github\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9bacabd-c374-4923-9e5f-eed4fd70a02d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"Figma\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27040be8-57ff-4b71-82f1-02a3452b09e5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"PostgreSQL\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a42d8601-3478-4ec9-a402-129c536fb74f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[data-canonical-src*=\"DevTools\"]",
+      "targets": [
+        ["css=p:nth-child(6) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[2]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[3]/a/img", "xpath:idRelative"],
+        ["xpath=//p[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19893afc-1351-4c2f-b752-9ea85cb5faeb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3:nth-child(7)",
+      "targets": [
+        ["css=h3:nth-child(7)", "css:finder"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/h3[2]", "xpath:idRelative"],
+        ["xpath=//h3[2]", "xpath:position"],
+        ["xpath=//h3[contains(.,'Testing Documentation')]", "xpath:innerText"]
+      ],
+      "value": "Testing Documentation"
+    }, {
+      "id": "36d29639-9743-4f68-9249-55aa246003f9",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Checklists",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "58747313-1ec1-44f0-b778-2730860f9eff",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=test-cases",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "306503db-7ae5-4e39-b05e-843a37dadd19",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=bug-reports",
+      "targets": [
+        ["css=ul:nth-child(8)", "css:finder"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul", "xpath:idRelative"],
+        ["xpath=//article/ul", "xpath:position"],
+        ["xpath=//ul[contains(.,'Checklists\nTest-Suites and Test-Cases\nBug-Reports\nSQL Queries\nPostman Collections\nSoapUI project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b22dfc75-2c22-463d-82bd-8bb7a2166c1f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=SQL",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "16c3003c-7c70-4eef-8dc5-c2c6bd04b6b7",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=Postman",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd85698e-5fc4-41b2-bdf0-cd84d10f2149",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "linkText=SoapUI",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f4000e3-314f-4dee-ae46-d4fea71da2a9",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h3:nth-child(9)",
+      "targets": [
+        ["css=h3:nth-child(9)", "css:finder"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/h3[3]", "xpath:idRelative"],
+        ["xpath=//h3[3]", "xpath:position"],
+        ["xpath=//h3[contains(.,'My profiles')]", "xpath:innerText"]
+      ],
+      "value": "My profiles"
+    }, {
+      "id": "42dde92c-c6e3-490a-83d1-287a14740c9f",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[href*=\"linkedin\"]",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "833b1891-323f-4d0f-b65f-a068627b390d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[href*=\"habr\"]",
+      "targets": [
+        ["linkText=Checklists", "linkText"],
+        ["css=ul:nth-child(8) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Checklists')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://github.com/ChosenOnelru/checklist')]", "xpath:href"],
+        ["xpath=//article/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Checklists')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1382c804-544b-4969-9d30-0deaeb758efe",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=[alt*=\"Anurag\"]",
+      "targets": [
+        ["css=p:nth-child(11) img", "css:finder"],
+        ["xpath=//img[@alt=\"Anurag's GitHub stats\"]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[5]/a/img", "xpath:idRelative"],
+        ["xpath=//p[5]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de9d9ab2-a867-4423-b81d-828daae04650",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=p:nth-child(12) img",
+      "targets": [
+        ["css=p:nth-child(12) img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://camo.githubusercontent.com/b8398804cfc8cd5cd55367f3c8c481514aedd55e4f0ecad54728bccd74370b67/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d43686f73656e4f6e656c7275')]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[6]/a/img", "xpath:idRelative"],
+        ["xpath=//p[6]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb470fa4-7df5-4ae4-989e-581485f680e3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2a4356cf-b9d7-4a05-9717-d8bf166ca9a7",
+    "name": "Открытие резюме",
+    "commands": [{
+      "id": "9d25932c-efe0-484b-899b-7e3532d0cd39",
+      "comment": "",
+      "command": "open",
+      "target": "https://github.com/ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af3c21ed-3506-4a87-85b3-7d424849e782",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f505fff5-5e29-49a1-ac2e-cc24c9395e55",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Link to my CV",
+      "targets": [
+        ["linkText=Link to my CV", "linkText"],
+        ["css=p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Link to my CV')]", "xpath:link"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://docs.google.com/document/d/11xJq3VtOYc-NJ0PhLKbPxyJu1HJoEWfJBVwC-vNc8_E/edit?usp=sharing')]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Link to my CV')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aace084-d090-4c2c-9520-b2fce25083be",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "CV QA Zhandarov - Google Документы",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db0cc9b1-08a1-4270-b9e9-a658f5309f34",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "047cad4a-cf75-4743-a491-dd343a53d9f5",
+    "name": "Открытие профиля Linkedin",
+    "commands": [{
+      "id": "d4cd5558-91e0-4a54-a710-d1c17591521c",
+      "comment": "",
+      "command": "open",
+      "target": "https://github.com/ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "046d1602-ae34-4a46-bd91-ecc4b76ab12e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1dc3463-4f2b-4ca3-867c-410ca22bd3b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=[href*=\"linked\"]",
+      "targets": [
+        ["css=p:nth-child(10) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[9]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[4]/a/img", "xpath:idRelative"],
+        ["xpath=//p[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a93d4744-9f97-4477-ade0-c4d93af1b50b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.text-heading-xlarge",
+      "targets": [
+        ["css=.text-heading-xlarge", "css:finder"],
+        ["xpath=//section[@id='ember29']/div[2]/div[2]/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Andrey Zhandarov')]", "xpath:innerText"]
+      ],
+      "value": "Andrey Zhandarov"
+    }, {
+      "id": "f573aeea-ab04-47be-a4a2-2d94076b45d9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8d614b3c-2e40-43e1-a5c4-f3714887b5a7",
+    "name": "Открытие профиля Habr",
+    "commands": [{
+      "id": "718f7cc1-c9e4-4766-897b-2471db7ae42a",
+      "comment": "",
+      "command": "open",
+      "target": "https://github.com/ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5a4af54-ac70-4084-a24e-745c2a64ba56",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "ChosenOnelru",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a0aba29-5d4c-4629-abf8-b66c2a0a5182",
+      "comment": "",
+      "command": "click",
+      "target": "css=[href*=\"habr\"]",
+      "targets": [
+        ["css=p:nth-child(10) > a:nth-child(1) > img", "css:finder"],
+        ["xpath=(//img[@alt='Header'])[9]", "xpath:img"],
+        ["xpath=//turbo-frame[@id='user-profile-frame']/div/div/div/article/p[4]/a/img", "xpath:idRelative"],
+        ["xpath=//p[4]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1713719c-1007-4ca7-a55f-db0e1a3c49fa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.page-title__title",
+      "targets": [
+        ["css=.page-title__title", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Андрей Жандаров')]", "xpath:innerText"]
+      ],
+      "value": "Андрей Жандаров"
+    }, {
+      "id": "a1641944-f947-46ec-b382-57ffc78c576e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "aefa6289-ce42-4d0d-ab28-5c6b0fb04c1f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://github.com/ChosenOnelru"],
+  "plugins": []
+}
